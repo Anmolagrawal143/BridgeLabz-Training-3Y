@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Question 15 - Payment Form</title>
+</head>
+<body>
+    <h1>Payment Form</h1>
+    <form action="#" method="post">
+        <p>
+            <label for="card_name">Cardholder Name:</label><br>
+            <input type="text" id="card_name" name="card_name" required>
+        </p>
+
+        <p>
+            <label for="card_number">Card Number:</label><br>
+            <input type="text" id="card_number" name="card_number" placeholder="1234 5678 9101 1121" required>
+        </p>
+
+        <p>
+            <label for="expiry">Expiry Date:</label><br>
+            <input type="text" id="expiry" name="expiry" placeholder="MM/YY" required>
+        </p>
+
+        <p>
+            <label for="cvv">CVV:</label><br>
+            <input type="password" id="cvv" name="cvv" maxlength="4" placeholder="123" required>
+        </p>
+
+        <p>
+            <input type="submit" value="Pay Now">
+        </p>
+    </form>
+</body>
+</html>

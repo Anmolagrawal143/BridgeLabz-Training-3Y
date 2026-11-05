@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Question 17 - Form with IFrame Target</title>
+</head>
+<body>
+    <h1>Submit Form to IFrame</h1>
+    
+    <!-- Form targeting the iframe -->
+    <form action="question_17_result.html" method="get" target="result_frame">
+        <p>
+            <label for="user_input">Input Text:</label><br>
+            <input type="text" id="user_input" name="user_input" required>
+        </p>
+        <p>
+            <input type="submit" value="Submit">
+        </p>
+    </form>
+
+    <h3>Response Window:</h3>
+    <iframe name="result_frame" width="500" height="150" title="Result Frame"></iframe>
+</body>
+</html>

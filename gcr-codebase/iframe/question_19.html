@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Question 19 - Form Security Attributes</title>
+</head>
+<body>
+    <h1>Secure Form</h1>
+    
+    <!-- Form with autocomplete turned off -->
+    <form action="#" method="post" autocomplete="off">
+        <p>
+            <label for="username">Username:</label><br>
+            <input type="text" id="username" name="username" required>
+        </p>
+        <p>
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password" required>
+        </p>
+        <p>
+            <input type="submit" value="Secure Submit">
+        </p>
+    </form>
+
+    <hr>
+
+    <h3>Security Note:</h3>
+    <p>
+        <strong>Why turning off autocomplete improves security:</strong><br>
+        Disabling autocomplete prevents web browsers from caching sensitive user data, such as usernames, passwords, credit card numbers, or personal details, on local disk storage. This reduces the risk of sensitive data exposure on shared, public, or compromised computers, protecting users against unauthorized access and credential theft.
+    </p>
+</body>
+</html>
