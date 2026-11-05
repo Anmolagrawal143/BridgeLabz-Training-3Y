@@ -1,0 +1,8 @@
+/* Custom Styles for Question 1 */
+.hero-section {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+}
+
+.navbar-brand {
+    letter-spacing: 0.5px;
+}

@@ -1,0 +1,17 @@
+/* Hover Effects and Custom Styling for Pricing Cards */
+.pricing-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pricing-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
+}
+
+.highlight-card {
+    transform: scale(1.03);
+}
+
+.highlight-card:hover {
+    transform: scale(1.05) translateY(-8px);
+}

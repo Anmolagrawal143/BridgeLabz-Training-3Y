@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q8 - Pricing Plans</title>
+    <!-- Bootstrap 5 CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="q8_pricing_plans.css">
+</head>
+<body class="bg-light py-5">
+    <header class="text-center mb-5 container">
+        <h1 class="display-5 fw-bold">Flexible Pricing Plans</h1>
+        <p class="lead text-muted">Choose the perfect plan tailored for your business needs.</p>
+    </header>
+
+    <main class="container">
+        <div class="row g-4 align-items-center">
+            <!-- Basic Plan -->
+            <div class="col-md-4">
+                <div class="card h-100 border-0 shadow-sm pricing-card">
+                    <div class="card-body p-4 text-center">
+                        <h2 class="h4 fw-bold">Basic</h2>
+                        <div class="my-3">
+                            <span class="display-6 fw-bold">$19</span>
+                            <span class="text-muted">/ month</span>
+                        </div>
+                        <ul class="list-unstyled my-4 space-y-2">
+                            <li class="py-1">5 Projects Included</li>
+                            <li class="py-1">10GB Cloud Storage</li>
+                            <li class="py-1">Standard Email Support</li>
+                            <li class="py-1 text-muted"><del>Custom Domain</del></li>
+                        </ul>
+                        <button class="btn btn-outline-primary w-100 fw-bold">Choose Basic</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pro Plan (Highlighted) -->
+            <div class="col-md-4">
+                <div class="card h-100 border-0 shadow-lg bg-primary text-white pricing-card highlight-card">
+                    <div class="card-body p-4 text-center">
+                        <span class="badge bg-warning text-dark mb-2">Most Popular</span>
+                        <h2 class="h4 fw-bold">Pro Plan</h2>
+                        <div class="my-3">
+                            <span class="display-5 fw-bold">$49</span>
+                            <span class="text-white-50">/ month</span>
+                        </div>
+                        <ul class="list-unstyled my-4">
+                            <li class="py-1">Unlimited Projects</li>
+                            <li class="py-1">100GB Cloud Storage</li>
+                            <li class="py-1">24/7 Priority Support</li>
+                            <li class="py-1">Custom Domain Enabled</li>
+                        </ul>
+                        <button class="btn btn-light text-primary w-100 fw-bold">Choose Pro</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Enterprise Plan -->
+            <div class="col-md-4">
+                <div class="card h-100 border-0 shadow-sm pricing-card">
+                    <div class="card-body p-4 text-center">
+                        <h2 class="h4 fw-bold">Enterprise</h2>
+                        <div class="my-3">
+                            <span class="display-6 fw-bold">$99</span>
+                            <span class="text-muted">/ month</span>
+                        </div>
+                        <ul class="list-unstyled my-4">
+                            <li class="py-1">Dedicated Infrastructure</li>
+                            <li class="py-1">1TB Storage</li>
+                            <li class="py-1">Dedicated Account Manager</li>
+                            <li class="py-1">SLA Guarantee</li>
+                        </ul>
+                        <button class="btn btn-outline-primary w-100 fw-bold">Choose Enterprise</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,4 @@
+/* Custom Sizing for Dashboard Container */
+.max-w-800 {
+    max-width: 800px;
+}

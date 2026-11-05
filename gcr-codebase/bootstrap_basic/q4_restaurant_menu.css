@@ -1,0 +1,4 @@
+/* Custom Styling for Restaurant Menu */
+.table th, .table td {
+    padding: 1rem;
+}

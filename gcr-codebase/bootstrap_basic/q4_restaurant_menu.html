@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q4 - Restaurant Menu Page</title>
+    <!-- Bootstrap 5 CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="q4_restaurant_menu.css">
+</head>
+<body class="bg-light">
+    <header class="py-5 text-center bg-dark text-white mb-5">
+        <div class="container">
+            <h1 class="display-4 fw-bold">The Golden Bistro</h1>
+            <p class="lead text-warning mb-0">Today's Special Culinary Creations</p>
+        </div>
+    </header>
+
+    <main class="container mb-5">
+        <div class="row g-5">
+            <!-- Menu Table Section -->
+            <div class="col-lg-7">
+                <h2 class="h3 fw-bold mb-4 border-bottom pb-2">Main Course Menu</h2>
+                <div class="table-responsive">
+                    <table class="table table-hover table-striped align-middle bg-white shadow-sm rounded">
+                        <thead class="table-dark">
+                            <tr>
+                                <th>Item</th>
+                                <th>Category</th>
+                                <th>Price</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="fw-semibold">Grilled Atlantic Salmon</td>
+                                <td>Seafood</td>
+                                <td class="fw-bold text-success">$24.00</td>
+                            </tr>
+                            <tr>
+                                <td class="fw-semibold">Truffle Mushroom Risotto</td>
+                                <td>Vegetarian</td>
+                                <td class="fw-bold text-success">$18.50</td>
+                            </tr>
+                            <tr>
+                                <td class="fw-semibold">Prime Ribeye Steak</td>
+                                <td>Grill</td>
+                                <td class="fw-bold text-success">$32.00</td>
+                            </tr>
+                            <tr>
+                                <td class="fw-semibold">Classic Caesar Salad</td>
+                                <td>Appetizer</td>
+                                <td class="fw-bold text-success">$12.00</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Chef's Specials List Group & Food Image -->
+            <div class="col-lg-5">
+                <h2 class="h3 fw-bold mb-4 border-bottom pb-2">Chef's Specials</h2>
+                <ul class="list-group shadow-sm mb-4">
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        <div>
+                            <strong class="d-block">Lobster Thermidor</strong>
+                            <small class="text-muted">Rich creamy brandy sauce with gruyere</small>
+                        </div>
+                        <span class="badge bg-danger rounded-pill">$38</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        <div>
+                            <strong class="d-block">Slow-Roasted Lamb Shank</strong>
+                            <small class="text-muted">Braised with rosemary and red wine</small>
+                        </div>
+                        <span class="badge bg-danger rounded-pill">$29</span>
+                    </li>
+                </ul>
+
+                <div class="card border-0 shadow-sm">
+                    <img src="https://picsum.photos/500/300?random=20" alt="Featured Dish" class="card-img-top img-fluid">
+                    <div class="card-body text-center">
+                        <figcaption class="blockquote-footer mb-0">Freshly prepared with locally sourced organic ingredients.</figcaption>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <p class="mb-0">&copy; 2026 The Golden Bistro. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q10 - Travel Agency Showcase</title>
+    <!-- Bootstrap 5 CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="q10_travel_agency.css">
+</head>
+<body class="bg-light">
+    <!-- Navbar Header -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand fw-bold text-info" href="#">Wanderlust Travels</a>
+                <span class="navbar-text text-white-50">Explore The World</span>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container my-5">
+        <!-- Bootstrap Carousel Section with custom intervals -->
+        <section class="mb-5">
+            <div id="destinationCarousel" class="carousel slide shadow-lg rounded overflow-hidden" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <!-- Slide 1 -->
+                    <div class="carousel-item active" data-bs-interval="3000">
+                        <img src="https://picsum.photos/1200/500?random=40" class="d-block w-100 carousel-img" alt="Tropical Beach">
+                        <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 p-3 rounded">
+                            <h3 class="fw-bold">Maldives Paradise</h3>
+                            <p>Relax on pristine white sand beaches and crystal clear water.</p>
+                        </div>
+                    </div>
+                    <!-- Slide 2 -->
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="https://picsum.photos/1200/500?random=41" class="d-block w-100 carousel-img" alt="Swiss Alps">
+                        <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 p-3 rounded">
+                            <h3 class="fw-bold">Swiss Alps Adventure</h3>
+                            <p>Experience breath-taking mountain views and winter sports.</p>
+                        </div>
+                    </div>
+                    <!-- Slide 3 -->
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="https://picsum.photos/1200/500?random=42" class="d-block w-100 carousel-img" alt="Kyoto Temples">
+                        <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 p-3 rounded">
+                            <h3 class="fw-bold">Kyoto Heritage</h3>
+                            <p>Discover historic temples, bamboo groves, and rich culture.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Carousel Controls -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#destinationCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#destinationCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+
+        <!-- Booking Progress Bar Section -->
+        <section class="p-4 bg-white rounded shadow-sm border mb-5">
+            <h2 class="h5 fw-bold mb-3">Spring Tour Booking Status</h2>
+            <div class="d-flex justify-content-between mb-2">
+                <span class="text-muted">Total Reserved Seats:</span>
+                <span class="fw-bold text-success">70% Filled</span>
+            </div>
+            <!-- Striped & Animated Progress Bar -->
+            <div class="progress" style="height: 25px;">
+                <div class="progress-bar progress-bar-striped progress-bar-animated bg-success fw-bold" 
+                     role="progressbar" 
+                     style="width: 70%;" 
+                     aria-valuenow="70" 
+                     aria-valuemin="0" 
+                     aria-valuemax="100">70% Booked</div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container text-center">
+            <p class="mb-1">Contact Us: info@wanderlusttravels.com | +1 (800) 555-0199</p>
+            <p class="mb-0 text-white-50">&copy; 2026 Wanderlust Travels. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS CDN (Required for Carousel) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q2 - Personal Portfolio Basics</title>
+    <!-- Bootstrap 5 CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="q2_personal_portfolio.css">
+</head>
+<body class="bg-light text-dark">
+    <!-- Header Section -->
+    <header class="container text-center mt-5 mb-4">
+        <h1 class="fw-bold display-5">Aarav Sharma</h1>
+        <p class="lead text-muted">Full-Stack Web Developer & UI/UX Specialist</p>
+    </header>
+
+    <main class="container">
+        <!-- Profile Image & CTA Buttons -->
+        <section class="text-center p-5 bg-white rounded-3 shadow-sm mb-5">
+            <img src="https://picsum.photos/180/180?random=1" alt="Profile Image" class="img-fluid rounded-circle mb-4 border border-3 border-primary p-1">
+            <h2 class="h4 mb-3">Hello, I'm Aarav</h2>
+            <p class="text-muted max-w-600 mx-auto mb-4">I build clean, accessible, and high-performance websites using HTML5, CSS3, JavaScript, and Bootstrap.</p>
+            <div class="d-flex justify-content-center gap-3">
+                <button class="btn btn-primary px-4 fw-bold">Hire Me</button>
+                <button class="btn btn-outline-dark px-4 fw-bold">Download CV</button>
+            </div>
+        </section>
+
+        <!-- Small Contact Form Section -->
+        <section class="max-w-600 mx-auto p-4 bg-white rounded-3 shadow-sm mb-5">
+            <h3 class="h5 fw-bold text-center mb-4">Get In Touch</h3>
+            <form>
+                <div class="mb-3">
+                    <label for="name" class="form-label fw-semibold">Your Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Enter your full name">
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label fw-semibold">Email Address</label>
+                    <input type="email" class="form-control" id="email" placeholder="name@example.com">
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label fw-semibold">Message</label>
+                    <textarea class="form-control" id="message" rows="3" placeholder="Write your message..."></textarea>
+                </div>
+                <button type="submit" class="btn btn-dark w-100">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="text-center py-4 text-muted">
+        <p class="mb-0">&copy; 2026 Aarav Sharma. Portfolio Demo.</p>
+    </footer>
+</body>
+</html>

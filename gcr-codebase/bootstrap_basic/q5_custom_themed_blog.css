@@ -1,0 +1,56 @@
+/* Custom Theme Overrides using CSS Variables & Google Fonts */
+:root {
+    --theme-primary: #059669; /* Emerald Green */
+    --theme-primary-hover: #047857;
+    --theme-soft: #d1fae5;
+    --bs-font-sans-serif: 'Poppins', sans-serif;
+}
+
+body {
+    font-family: var(--bs-font-sans-serif);
+    background-color: #f8fafc;
+    color: #1e293b;
+}
+
+.text-primary-custom {
+    color: var(--theme-primary) !important;
+}
+
+.bg-custom-soft {
+    background-color: var(--theme-soft) !important;
+}
+
+.text-custom {
+    color: var(--theme-primary) !important;
+    font-weight: 600;
+}
+
+.btn-custom {
+    background-color: var(--theme-primary);
+    color: #ffffff;
+    border: none;
+    font-weight: 600;
+}
+
+.btn-custom:hover {
+    background-color: var(--theme-primary-hover);
+    color: #ffffff;
+}
+
+.custom-header {
+    background-color: #ffffff;
+    border-bottom: 2px solid var(--theme-soft);
+}
+
+.custom-card {
+    transition: transform 0.3s ease;
+}
+
+.custom-card:hover {
+    transform: translateY(-5px);
+}
+
+.custom-footer {
+    background-color: #ffffff;
+    border-top: 1px solid #e2e8f0;
+}
