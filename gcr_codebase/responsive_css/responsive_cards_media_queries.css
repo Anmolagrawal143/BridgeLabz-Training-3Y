@@ -1,0 +1,78 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f1f5f9;
+    color: #333;
+    padding: 30px;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.header h1 {
+    color: #1e293b;
+}
+
+/* Flexbox Layout for Cards */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Desktop: 4 Columns */
+.card {
+    flex: 1 1 calc(25% - 20px);
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+    transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+.card h2 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+    color: #0f172a;
+}
+
+.card p {
+    line-height: 1.5;
+    color: #64748b;
+    margin-bottom: 10px;
+}
+
+/* Hover Background Color Change */
+.card:hover {
+    background-color: #2563eb;
+    color: #ffffff;
+}
+
+.card:hover h2,
+.card:hover p {
+    color: #ffffff;
+}
+
+/* Tablet: 2 Columns (max-width: 900px) */
+@media (max-width: 900px) {
+    .card {
+        flex: 1 1 calc(50% - 20px);
+    }
+}
+
+/* Mobile: 1 Column (max-width: 600px) */
+@media (max-width: 600px) {
+    .card {
+        flex: 1 1 100%;
+    }
+}

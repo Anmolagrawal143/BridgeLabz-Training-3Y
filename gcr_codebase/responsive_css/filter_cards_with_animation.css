@@ -1,0 +1,94 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0f172a;
+    color: #ffffff;
+    padding: 40px 20px;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+/* Flexbox Layout */
+.card-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* Profile Card Styling & Fade-In Keyframe Animation */
+.card {
+    background-color: #1e293b;
+    border-radius: 12px;
+    padding: 25px;
+    text-align: center;
+    flex: 1;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 1.2s ease-out forwards;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.card img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    transition: filter 0.4s ease;
+}
+
+.card h2 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    color: #38bdf8;
+}
+
+.card p {
+    font-size: 0.95rem;
+    color: #94a3b8;
+    line-height: 1.5;
+}
+
+/* Image Filters */
+.filter-grayscale { filter: grayscale(100%); }
+.filter-sepia { filter: sepia(100%); }
+.filter-hue { filter: hue-rotate(180deg); }
+
+/* Hover Lift & Filter Removal */
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(56, 189, 248, 0.2);
+}
+
+.card:hover img {
+    filter: none;
+}
+
+/* Page Load Animation Keyframes */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Stacking below 800px */
+@media (max-width: 800px) {
+    .card-container {
+        flex-direction: column;
+    }
+}

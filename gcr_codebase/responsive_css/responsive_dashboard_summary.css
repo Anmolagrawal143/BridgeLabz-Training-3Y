@@ -1,0 +1,129 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0f172a;
+    color: #ffffff;
+    min-height: 100vh;
+}
+
+/* Grid Dashboard Layout */
+.dashboard-container {
+    display: grid;
+    grid-template-areas:
+        "header header"
+        "sidebar main";
+    grid-template-columns: 240px 1fr;
+    grid-template-rows: 70px 1fr;
+    min-height: 100vh;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.header {
+    grid-area: header;
+    background-color: #1e293b;
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+    border-bottom: 1px solid #334155;
+}
+
+.header h1 {
+    font-size: 1.5rem;
+    color: #38bdf8;
+}
+
+.sidebar {
+    grid-area: sidebar;
+    background-color: #1e293b;
+    padding: 30px 20px;
+    border-right: 1px solid #334155;
+}
+
+.sidebar nav {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.sidebar a {
+    color: #94a3b8;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 6px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.sidebar a:hover {
+    background-color: #334155;
+    color: #38bdf8;
+}
+
+/* Main Content Area */
+.main-content {
+    grid-area: main;
+    padding: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    align-content: start;
+}
+
+.dash-card {
+    background-color: #1e293b;
+    padding: 25px;
+    border-radius: 10px;
+    border: 1px solid #334155;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.dash-card h2 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #38bdf8;
+}
+
+.dash-card p {
+    font-size: 0.9rem;
+    color: #94a3b8;
+    line-height: 1.5;
+}
+
+/* Hover Scaling and Shadow */
+.dash-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(56, 189, 248, 0.15);
+}
+
+/* Keyframes Loading Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Responsiveness below 750px */
+@media (max-width: 750px) {
+    .dashboard-container {
+        grid-template-areas:
+            "header"
+            "sidebar"
+            "main";
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto 1fr;
+    }
+
+    .sidebar nav {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}

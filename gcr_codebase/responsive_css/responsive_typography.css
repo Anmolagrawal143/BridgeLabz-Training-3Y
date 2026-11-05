@@ -1,0 +1,53 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fafafa;
+    color: #27272a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    text-align: center;
+    max-width: 800px;
+    padding: 40px;
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+    margin: 0 auto;
+}
+
+/* Clamp Functions for Scalable Typography */
+h1 {
+    font-size: clamp(1.5rem, 4vw, 3rem);
+    margin-bottom: 20px;
+    color: #18181b;
+    line-height: 1.2;
+}
+
+p {
+    font-size: clamp(1rem, 2vw, 1.5rem);
+    line-height: 1.7;
+    color: #52525b;
+}
+
+/* Responsiveness below 700px */
+@media (max-width: 700px) {
+    .container {
+        padding: 25px;
+    }
+
+    p {
+        line-height: 1.5;
+        letter-spacing: 0.3px;
+    }
+}

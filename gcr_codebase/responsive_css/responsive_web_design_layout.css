@@ -1,0 +1,104 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8fafc;
+    color: #1e293b;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header Flexbox */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #0f172a;
+    color: #ffffff;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #38bdf8;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #38bdf8;
+}
+
+/* Main Feature Boxes Layout */
+.main-content {
+    flex: 1;
+    display: flex;
+    gap: 30px;
+    padding: 50px 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.feature-box {
+    flex: 1;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    border: 1px solid #e2e8f0;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-box h2 {
+    margin-bottom: 15px;
+    color: #0f172a;
+}
+
+.feature-box p {
+    color: #64748b;
+    line-height: 1.6;
+}
+
+/* Hover Scaling Effect */
+.feature-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer Styling */
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #0f172a;
+    color: #94a3b8;
+}
+
+/* Responsive Breakpoint below 750px */
+@media (max-width: 750px) {
+    .header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .main-content {
+        flex-direction: column;
+    }
+}

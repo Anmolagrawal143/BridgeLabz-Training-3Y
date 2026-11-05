@@ -1,0 +1,127 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8fafc;
+    color: #1e293b;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Flexbox Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #0f172a;
+    color: #ffffff;
+}
+
+.brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #38bdf8;
+}
+
+.nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-left: 20px;
+    transition: color 0.3s;
+}
+
+.nav a:hover {
+    color: #38bdf8;
+}
+
+/* Main Grid Layout */
+.main-grid {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    padding: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.section-box {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+}
+
+.section-box:hover {
+    transform: translateY(-5px);
+}
+
+.section-box h2 {
+    margin-bottom: 15px;
+    color: #0f172a;
+}
+
+.section-box p, .section-box ul {
+    color: #64748b;
+    line-height: 1.6;
+}
+
+.section-box ul {
+    list-style: none;
+}
+
+.inner-gallery {
+    display: flex;
+    gap: 10px;
+}
+
+.inner-gallery img {
+    width: 50%;
+    border-radius: 6px;
+    transition: filter 0.4s ease;
+}
+
+.img-sepia { filter: sepia(80%); }
+.img-blur { filter: blur(2px); }
+
+.inner-gallery img:hover {
+    filter: none;
+}
+
+/* Fade In Animation */
+.fade-in {
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(15px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #0f172a;
+    color: #94a3b8;
+}
+
+/* Responsive Stacking below 700px */
+@media (max-width: 700px) {
+    .header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .main-grid {
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,81 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f1f5f9;
+    color: #1e293b;
+    padding: 40px 20px;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* Grid Layout */
+.principles-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.principle-box {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    transition: all 0.4s ease;
+}
+
+.principle-box h2 {
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+    color: #2563eb;
+}
+
+.principle-box p {
+    color: #475569;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+code {
+    display: block;
+    background-color: #e2e8f0;
+    padding: 10px;
+    border-radius: 6px;
+    font-family: monospace;
+    font-size: 0.9rem;
+    color: #0f172a;
+}
+
+/* Hover Gradient and Text Color Change */
+.principle-box:hover {
+    background: linear-gradient(135deg, #2563eb, #1d4ed8);
+    color: #ffffff;
+    transform: translateY(-5px);
+}
+
+.principle-box:hover h2,
+.principle-box:hover p {
+    color: #ffffff;
+}
+
+.principle-box:hover code {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #ffffff;
+}
+
+/* Mobile Responsiveness below 600px */
+@media (max-width: 600px) {
+    .principles-grid {
+        grid-template-columns: 1fr;
+    }
+}

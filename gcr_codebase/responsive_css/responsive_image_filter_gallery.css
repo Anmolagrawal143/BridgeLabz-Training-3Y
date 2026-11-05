@@ -1,0 +1,76 @@
+/* Global Reset & Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f9;
+    color: #333;
+    padding: 20px;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.header h1 {
+    font-size: 2rem;
+    color: #2c3e50;
+}
+
+/* CSS Grid Layout */
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Gallery Item Styling */
+.gallery-item {
+    background: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+    transition: filter 0.5s ease, transform 0.3s ease;
+}
+
+figcaption {
+    padding: 12px;
+    font-weight: bold;
+    color: #555;
+}
+
+/* Applied CSS Filters */
+.filter-blur { filter: blur(4px); }
+.filter-grayscale { filter: grayscale(100%); }
+.filter-sepia { filter: sepia(100%); }
+.filter-brightness { filter: brightness(150%); }
+.filter-contrast { filter: contrast(200%); }
+.filter-huerotate { filter: hue-rotate(90deg); }
+
+/* Hover Transition removing filters */
+.gallery-item:hover img {
+    filter: none;
+    transform: scale(1.03);
+}
+
+/* Mobile Responsiveness below 600px */
+@media (max-width: 600px) {
+    .gallery-container {
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,78 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f1f5f9;
+    color: #1e293b;
+    padding: 40px 20px;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* CSS Grid Layout */
+.grid-sheet {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.sheet-box {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    border-left: 5px solid #2563eb;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.sheet-box h2 {
+    font-size: 1.3rem;
+    margin-bottom: 12px;
+    color: #2563eb;
+    transition: color 0.3s ease;
+}
+
+.sheet-box p {
+    color: #475569;
+    line-height: 1.6;
+}
+
+/* Hover Interaction */
+.sheet-box:hover {
+    transform: translateY(-5px);
+    border-left-color: #059669;
+}
+
+.sheet-box:hover h2 {
+    color: #059669;
+}
+
+/* Mobile Layout below 700px: Stacked key-value appearance */
+@media (max-width: 700px) {
+    .grid-sheet {
+        grid-template-columns: 1fr;
+    }
+
+    .sheet-box {
+        border-left: none;
+        border-top: 4px solid #2563eb;
+        padding: 20px;
+    }
+
+    .sheet-box h2 {
+        display: block;
+        font-size: 1.1rem;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+    }
+}
