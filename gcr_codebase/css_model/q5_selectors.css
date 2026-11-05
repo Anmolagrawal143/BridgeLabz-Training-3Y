@@ -1,0 +1,87 @@
+/* Global Setup */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8fafc;
+    color: #334155;
+    padding: 2rem;
+}
+
+.wrapper {
+    max-width: 700px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #1e293b;
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+/* 1. Attribute Selector: Target input fields with [type="text"] */
+input[type="text"] {
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 2px solid #cbd5e1;
+    border-radius: 6px;
+}
+
+/* 2. Pseudo-class :focus state */
+input[type="text"]:focus {
+    border-color: #2563eb;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.2);
+}
+
+/* 3. Attribute Selector: Target links beginning with https */
+a[href^="https"] {
+    color: #16a34a;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* 4. Combinator (Direct Child `>`): Select direct <li> children inside .item-list */
+.item-list > li {
+    padding: 0.8rem;
+    list-style: none;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+/* 5. Pseudo-class :nth-child(even): Style alternate list rows */
+.item-list > li:nth-child(even) {
+    background-color: #f1f5f9;
+}
+
+/* 6. Pseudo-class :hover on list items */
+.item-list > li:hover {
+    background-color: #e2e8f0;
+    cursor: pointer;
+}
+
+/* 7. Pseudo-element ::before: Add custom icon bullet prefix */
+.item-list > li::before {
+    content: "⚡ ";
+    color: #eab308;
+}
+
+/* 8. Pseudo-element ::after: Add a subtle tag after external link */
+a[href^="https"]::after {
+    content: " 🔒 (Secure)";
+    font-size: 0.85rem;
+    color: #15803d;
+}

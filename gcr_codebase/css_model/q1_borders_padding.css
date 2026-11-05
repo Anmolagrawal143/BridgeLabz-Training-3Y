@@ -1,0 +1,71 @@
+/* Global Reset & Base Setup */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f6f8;
+    color: #333;
+    padding: 2rem;
+}
+
+.page-header {
+    text-align: center;
+    margin-bottom: 2.5rem;
+    color: #1a202c;
+}
+
+/* Flexbox Horizontal Alignment */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Base Box Styling */
+.demo-box {
+    background-color: #ffffff;
+    width: 240px;
+    text-align: center;
+    border-radius: 8px; /* Border Radius */
+    /* Transition for smooth border color change on hover */
+    transition: border-color 0.4s ease, transform 0.3s ease;
+}
+
+/* 1. Solid Border with 15px padding */
+.box-solid {
+    border: 3px solid #3182ce;
+    padding: 15px;
+}
+
+/* 2. Dashed Border with 25px padding */
+.box-dashed {
+    border: 3px dashed #e53e3e;
+    padding: 25px;
+}
+
+/* 3. Double Border with 35px padding */
+.box-double {
+    border: 6px double #38a169;
+    padding: 35px;
+}
+
+/* 4. Groove Border with rounded corners */
+.box-groove {
+    border: 5px groove #805ad5;
+    padding: 20px;
+    border-radius: 20px; /* Custom rounded corners */
+}
+
+/* Hover Effect: Changes Border Color & Lifts Box */
+.demo-box:hover {
+    border-color: #dd6b20; /* Border color transition */
+    transform: translateY(-5px);
+}

@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0f172a;
+    color: #fff;
+    padding: 2rem;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+/* Centered Flexbox Layout */
+.center-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}
+
+/* Visual Layer Representation */
+.margin-layer {
+    background-color: #f97316; /* Margin color */
+    padding: 25px;
+    border-radius: 12px;
+    text-align: center;
+    outline: 2px dashed #ffedd5;
+}
+
+.border-layer {
+    background-color: #eab308; /* Border color */
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.padding-layer {
+    background-color: #22c55e; /* Padding color */
+    padding: 25px;
+    border-radius: 6px;
+}
+
+.content-layer {
+    background-color: #3b82f6; /* Content color */
+    padding: 20px 40px;
+    font-weight: bold;
+    border-radius: 4px;
+    color: #fff;
+}
+
+.layer-label {
+    font-size: 0.8rem;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Box Sizing Comparison */
+.comparison-grid {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.box-demo {
+    width: 260px;
+    padding: 20px;
+    border: 10px solid #ec4899;
+    background-color: #1e293b;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.default-box {
+    box-sizing: content-box; /* Default CSS box-sizing */
+}
+
+.border-box {
+    box-sizing: border-box; /* Modern border-box sizing */
+}

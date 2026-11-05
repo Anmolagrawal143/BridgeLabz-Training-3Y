@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 5 - Advanced CSS Selectors</title>
+    <link rel="stylesheet" href="q5_selectors.css">
+</head>
+<body>
+    <main class="wrapper">
+        <h1>Advanced CSS Selectors Showcase</h1>
+
+        <!-- Form section for attribute selectors -->
+        <section class="form-section">
+            <h2>Attribute Selectors & Focus States</h2>
+            <input type="text" placeholder="Text Input ([type='text'])">
+            <input type="password" placeholder="Password Input">
+        </section>
+
+        <!-- Links section for attribute start selector -->
+        <section class="link-section">
+            <h2>Attribute Selector ([href^="https"])</h2>
+            <a href="https://example.com" class="external-link">Secure External Link</a>
+            <a href="http://insecure.org">Standard Link</a>
+        </section>
+
+        <!-- List section for pseudo-classes, combinators & pseudo-elements -->
+        <section class="list-section">
+            <h2>Item List (:nth-child, combinators, ::before)</h2>
+            <ul class="item-list">
+                <li class="item">First List Item</li>
+                <li class="item">Second List Item (Nth-child Even)</li>
+                <li class="item">Third List Item</li>
+                <li class="item">Fourth List Item (Nth-child Even)</li>
+                <li class="item">Fifth List Item</li>
+            </ul>
+        </section>
+    </main>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 8 - Box Model Exploration</title>
+    <link rel="stylesheet" href="q8_boxmodel.css">
+</head>
+<body>
+    <header class="header">
+        <h1>CSS Box Model Exploration</h1>
+    </header>
+
+    <main class="center-container">
+        <!-- Visual Layered Box Model Representation -->
+        <div class="margin-layer">
+            <span class="layer-label">MARGIN (Outer Layer)</span>
+            <div class="border-layer">
+                <span class="layer-label">BORDER</span>
+                <div class="padding-layer">
+                    <span class="layer-label">PADDING</span>
+                    <div class="content-layer">
+                        CONTENT AREA
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="comparison-grid">
+            <div class="box-demo default-box">
+                <h3>content-box (Default)</h3>
+                <p>Width = 200px + Padding + Border = 260px Total Rendered Width.</p>
+            </div>
+            <div class="box-demo border-box">
+                <h3>border-box</h3>
+                <p>Width = 200px Total. Padding & Border are included inside width.</p>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

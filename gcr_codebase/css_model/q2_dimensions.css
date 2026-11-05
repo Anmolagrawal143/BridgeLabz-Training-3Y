@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Flexbox Centering (Vertical & Horizontal) */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1a202c;
+    color: #fff;
+    min-height: 100vh;
+}
+
+.flex-wrapper {
+    display: flex;
+    justify-content: center; /* Horizontal centering */
+    align-items: center;     /* Vertical centering */
+    min-height: 100vh;
+    gap: 2rem;
+    padding: 2rem;
+    flex-wrap: wrap;
+}
+
+/* Base Box Styling */
+.size-box {
+    padding: 1.5em; /* em unit */
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+}
+
+/* Box 1: Pixels & Fixed Dimensions */
+.box-px {
+    width: 280px;  /* px unit */
+    height: 200px; /* px unit */
+    background-color: #3182ce; /* Distinct background */
+}
+
+/* Box 2: Percentage & Min-Height */
+.box-pct {
+    width: 35%;          /* % unit */
+    min-height: 250px;   /* min-height */
+    background-color: #dd6b20; /* Distinct background */
+}
+
+/* Box 3: Viewport Height, Max-Width & Overflow */
+.box-vh {
+    height: 40vh;         /* vh unit */
+    max-width: 300px;     /* max-width */
+    overflow: auto;       /* overflow property for long content */
+    background-color: #38a169; /* Distinct background */
+}
