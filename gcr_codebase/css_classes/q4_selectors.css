@@ -1,0 +1,89 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8fafc;
+    color: #334155;
+    line-height: 1.6;
+}
+
+/* 1. Semantic Header & Footer Selectors (Element Selectors) */
+header {
+    background-color: #0f172a;
+    color: #ffffff;
+    text-align: center;
+    padding: 1.5rem;
+}
+
+footer {
+    background-color: #0f172a;
+    color: #94a3b8;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+.content-container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 0 1.5rem;
+}
+
+/* 2. ID Selector */
+#element-section {
+    background: #ffffff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    margin-bottom: 1.5rem;
+}
+
+/* 3. Class Selector */
+.section-title {
+    color: #2563eb;
+    margin-bottom: 1rem;
+}
+
+/* 4. Direct Child Combinator (>) */
+article > p.highlight {
+    background-color: #dbeafe;
+    color: #1e40af;
+    padding: 0.5rem;
+    border-left: 4px solid #2563eb;
+    margin: 0.5rem 0;
+}
+
+/* 5. General Sibling Combinator (~) */
+p.highlight ~ p {
+    font-style: italic;
+    color: #64748b;
+}
+
+/* 6. Attribute Selector ([href^="https"]) */
+a[href^="https"] {
+    background-color: #16a34a;
+    color: #ffffff;
+}
+
+a[href^="http://"] {
+    background-color: #dc2626;
+    color: #ffffff;
+}
+
+.links-section {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.link-btn {
+    text-decoration: none;
+    padding: 0.6rem 1.2rem;
+    border-radius: 6px;
+    font-weight: bold;
+}

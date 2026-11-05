@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 1 - Pseudo-Classes</title>
+    <link rel="stylesheet" href="q1_pseudoclasses.css">
+</head>
+<body>
+    <header class="header">
+        <h1>CSS Pseudo-Classes Demonstration</h1>
+    </header>
+    <main class="flex-container">
+        <!-- :hover Example -->
+        <div class="card">
+            <h3>:hover</h3>
+            <a href="#" class="demo-link">Hover Link</a>
+            <p>Triggers when the mouse cursor moves over the element.</p>
+        </div>
+
+        <!-- :focus Example -->
+        <div class="card">
+            <h3>:focus</h3>
+            <input type="text" class="demo-input" placeholder="Click to focus...">
+            <p>Triggers when the user clicks or tabs into an input element.</p>
+        </div>
+
+        <!-- :active Example -->
+        <div class="card">
+            <h3>:active</h3>
+            <button class="demo-button">Click Me!</button>
+            <p>Triggers while the mouse button is being held down.</p>
+        </div>
+
+        <!-- :nth-child() Example -->
+        <div class="card">
+            <h3>:nth-child()</h3>
+            <ul class="demo-list">
+                <li>Item 1 (Odd)</li>
+                <li>Item 2 (Even)</li>
+                <li>Item 3 (Odd)</li>
+                <li>Item 4 (Even)</li>
+            </ul>
+            <p>Selects elements based on their numeric position in a list.</p>
+        </div>
+    </main>
+</body>
+</html>

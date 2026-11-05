@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #1a1a2e;
+    color: #ffffff;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.centered-container {
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 0.5rem;
+    color: #e94560;
+}
+
+.subtitle {
+    margin-bottom: 3rem;
+    color: #8d99ae;
+}
+
+.tooltip-wrapper {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+}
+
+/* Tooltip container positioning */
+.tooltip-item {
+    position: relative;
+    display: inline-block;
+}
+
+.trigger {
+    background-color: #16213e;
+    color: #00fff5;
+    padding: 0.8rem 1.5rem;
+    border-radius: 6px;
+    border: 1px solid #00fff5;
+    cursor: pointer;
+    font-weight: bold;
+    display: inline-block;
+}
+
+/* Tooltip Box Positioning & Smooth Transition */
+.tooltip-box {
+    position: absolute;
+    bottom: 125%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #0f3460;
+    color: #ffffff;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    z-index: 10;
+}
+
+/* Arrow pointer for tooltip */
+.tooltip-box::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 6px;
+    border-style: solid;
+    border-color: #0f3460 transparent transparent transparent;
+}
+
+/* Hover effect revealing tooltip */
+.tooltip-item:hover .tooltip-box {
+    opacity: 1;
+    visibility: visible;
+}

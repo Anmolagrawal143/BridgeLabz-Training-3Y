@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 8 - Box-Sizing Comparison</title>
+    <link rel="stylesheet" href="q8_boxsizing.css">
+</head>
+<body>
+    <main class="container">
+        <h1>Box-Sizing Comparison</h1>
+        <p class="desc">Both boxes below have <code>width: 300px; padding: 30px; border: 10px solid;</code></p>
+
+        <div class="box-wrapper">
+            <!-- Box 1: content-box -->
+            <div class="box box-content">
+                <h2>content-box</h2>
+                <p>Total Rendered Width = 300 + 60 + 20 = <strong>380px</strong></p>
+            </div>
+
+            <!-- Box 2: border-box -->
+            <div class="box box-border">
+                <h2>border-box</h2>
+                <p>Total Rendered Width = <strong>300px</strong> (Padding & border included)</p>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

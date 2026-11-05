@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7f6;
+    color: #333;
+    padding: 2rem;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+/* Flexbox alignment in one row */
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 1.5rem;
+    flex: 1;
+    min-width: 220px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.card h3 {
+    margin-bottom: 1rem;
+    color: #2c3e50;
+}
+
+.card p {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/* :hover state demonstration */
+.demo-link {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border: 2px solid #3498db;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.demo-link:hover {
+    background-color: #3498db;
+    color: #ffffff;
+}
+
+/* :focus state demonstration */
+.demo-input {
+    padding: 0.5rem;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.demo-input:focus {
+    border-color: #2ecc71;
+    box-shadow: 0 0 8px rgba(46, 204, 113, 0.4);
+}
+
+/* :active state demonstration */
+.demo-button {
+    padding: 0.5rem 1.5rem;
+    background-color: #e74c3c;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: transform 0.1s ease;
+}
+
+.demo-button:active {
+    background-color: #c0392b;
+    transform: scale(0.95);
+}
+
+/* :nth-child state demonstration */
+.demo-list {
+    list-style: none;
+    width: 100%;
+}
+
+.demo-list li {
+    padding: 0.4rem;
+    margin-bottom: 0.2rem;
+    border-radius: 4px;
+}
+
+.demo-list li:nth-child(odd) {
+    background-color: #ecf0f1;
+}
+
+.demo-list li:nth-child(even) {
+    background-color: #34495e;
+    color: #ffffff;
+}
