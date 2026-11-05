@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+}
+
+/* Header - Fixed Position */
+.dash-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background-color: #1a202c;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    padding: 0 1.5rem;
+    z-index: 100;
+}
+
+.brand {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+/* Container below header */
+.dash-container {
+    display: flex;
+    margin-top: 60px;
+    min-height: calc(100vh - 60px);
+}
+
+/* Sidebar - Left Navigation */
+.sidebar {
+    width: 240px;
+    background-color: #2d3748;
+    color: #fff;
+    padding: 1.5rem 0;
+    flex-shrink: 0;
+}
+
+.sidebar-nav {
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar-nav a {
+    color: #cbd5e0;
+    text-decoration: none;
+    padding: 0.85rem 1.5rem;
+    font-size: 1rem;
+    transition: background 0.2s ease;
+}
+
+.sidebar-nav a:hover,
+.sidebar-nav a.active {
+    background-color: #4a5568;
+    color: #fff;
+}
+
+/* Main Content Area */
+.main-content {
+    flex: 1;
+    padding: 2rem;
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+/* Content Boxes with Shadows and Spacing */
+.content-box {
+    background: #ffffff;
+    flex: 1;
+    min-width: 300px;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); /* Shadows */
+    border: 1px solid #e2e8f0;
+}
+
+.content-box h2 {
+    margin-bottom: 1rem;
+    color: #2b6cb0;
+    font-size: 1.3rem;
+}
+
+/* Responsive Stacking on Smaller Screens */
+@media (max-width: 768px) {
+    .dash-container {
+        flex-direction: column; /* Stacks sidebar above content */
+    }
+
+    .sidebar {
+        width: 100%;
+    }
+
+    .main-content {
+        padding: 1rem;
+    }
+}

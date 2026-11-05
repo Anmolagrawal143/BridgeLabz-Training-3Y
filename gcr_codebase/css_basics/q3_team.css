@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8;
+    color: #333;
+    padding: 2rem;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.header h1 {
+    font-size: 2.5rem;
+    color: #2c3e50;
+}
+
+/* Flexbox Layout for 3 Columns */
+.team-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Base Card Styling (Box Model) */
+.card {
+    background: #ffffff;
+    flex: 1;
+    padding: 2rem; /* Uniform padding */
+    border: 1px solid #e1e8ed; /* Border */
+    border-radius: 12px; /* Rounded corners */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); /* Shadow effect */
+    text-align: center;
+    position: relative;
+}
+
+.avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+.card h2 {
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+    color: #2c3e50;
+}
+
+.role {
+    font-size: 0.95rem;
+    font-weight: bold;
+    color: #7f8c8d;
+    margin-bottom: 1rem;
+}
+
+.desc {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: #555;
+}
+
+/* Highlighted Team Lead Card */
+.team-lead {
+    background: #eef6ff;
+    border: 2px dashed #3498db; /* Different border style */
+    box-shadow: 0 6px 18px rgba(52, 152, 219, 0.2);
+}
+
+.badge {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background: #3498db;
+    color: #fff;
+    font-size: 0.75rem;
+    font-weight: bold;
+    padding: 4px 8px;
+    border-radius: 4px;
+}
+
+/* Responsive Media Query (< 600px) */
+@media (max-width: 600px) {
+    .team-container {
+        flex-direction: column; /* Adjusts to a single column */
+    }
+}

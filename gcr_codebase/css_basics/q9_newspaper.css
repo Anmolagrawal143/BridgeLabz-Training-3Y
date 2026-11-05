@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f4ece1; /* Custom page background color */
+    font-family: 'Times New Roman', Times, serif;
+    padding: 2rem;
+    color: #111;
+}
+
+.newspaper-wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+    background: #fffdf9;
+    padding: 2.5rem; /* Padding around main content */
+    border: 1px solid #d3c9b8;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+}
+
+/* Heading Spanning Across All Columns */
+.newspaper-heading {
+    font-size: 3rem;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-bottom: 3px double #333;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    column-span: all; /* Column Span All */
+}
+
+/* Multi-Column Layout */
+.columns-container {
+    column-count: 3; /* Three vertical columns */
+    column-gap: 2rem; /* Column gap */
+    text-align: justify; /* Justified text */
+}
+
+.columns-container p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+/* Image Aligned Left using Float */
+.float-img {
+    float: left; /* Float image to left */
+    width: 100%;
+    max-width: 180px;
+    margin: 0 1rem 1rem 0;
+    border: 1px solid #aaa;
+    padding: 3px;
+    background: #fff;
+}
+
+@media (max-width: 768px) {
+    .columns-container {
+        column-count: 1; /* Fallback for smaller screens */
+    }
+}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 10 - Master Webpage Layout</title>
+    <link rel="stylesheet" href="q10_master.css">
+</head>
+<body>
+    <!-- Sticky Header -->
+    <header class="navbar">
+        <div class="logo">ApexDesign</div>
+        <nav>
+            <ul class="nav-menu">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+        <div class="hero-content">
+            <h1>Welcome to ApexDesign</h1>
+            <p>Crafting perfection with standard CSS & modern layout techniques.</p>
+        </div>
+    </section>
+
+    <!-- About Section (2 Columns) -->
+    <section id="about" class="section about-section">
+        <div class="container two-col">
+            <div class="col-text">
+                <h2>About Us</h2>
+                <p>We are a forward-thinking design studio dedicated to building high-performance, beautifully styled web applications. Our methodology prioritizes performance, semantic markup, and pixel-perfect design.</p>
+            </div>
+            <div class="col-img">
+                <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=500&q=80" alt="About Studio">
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section (3 Boxes) -->
+    <section id="services" class="section services-section">
+        <div class="container">
+            <h2 class="sec-title">Our Services</h2>
+            <div class="three-boxes">
+                <div class="service-box">
+                    <h3>Web Architecture</h3>
+                    <p>Clean semantic structure engineered for search engines and accessibility.</p>
+                </div>
+                <div class="service-box">
+                    <h3>CSS Styling</h3>
+                    <p>Modern responsive layouts using Flexbox, CSS Grid, and custom variables.</p>
+                </div>
+                <div class="service-box">
+                    <h3>Performance</h3>
+                    <p>Lightweight codebases ensuring maximum speed and smooth render times.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+        <div class="container">
+            <h2 class="sec-title">Contact Us</h2>
+            <form class="simple-form" action="#" method="post">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea rows="4" placeholder="Your Message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <p>&copy; 2026 ApexDesign Studio. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
